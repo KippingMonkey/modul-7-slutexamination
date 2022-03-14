@@ -1,0 +1,15 @@
+.menu-container{
+    width: 375px;
+    height: 839px;
+    background-color: #F3E4E1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.header{
+    color: #2F2926;
+    font-family:'PT Serif', serif ;
+    font-weight: 700;
+    
+}

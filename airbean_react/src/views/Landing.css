@@ -4,16 +4,18 @@
   background-color: #38846D;
   display: flex;
   flex-direction: row;
-  justify-content:start;
+  justify-content:space-between;
+}
+
+.logo-container{
+  position: relative;
+  width: 375px;
+  height: 667px;
 }
 
 .logo{
-  width: 10%;
+  position: absolute;
+  top: 16rem;
+  left: -7rem;
+  width: 17rem;
 }
-/* 
-.graphic-left{
-  display: inline;
-}
-.graphic-right{
-  display: inline;
-} */
