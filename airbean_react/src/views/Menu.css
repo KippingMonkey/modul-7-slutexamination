@@ -10,8 +10,10 @@
 .menu{
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .header{
@@ -19,4 +21,5 @@
     font-family:'PT Serif', serif ;
     font-weight: 700;
     font-size: 42px;
+    margin: 0;
 }

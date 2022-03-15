@@ -12,6 +12,12 @@ function Menu () {
       <div className='menu'>
         <h1 className='header'>Meny</h1>
         <MenuItem/>
+        <MenuItem/>
+        <MenuItem/>
+        <MenuItem/>
+        <MenuItem/>
+        <MenuItem/>
+        <MenuItem/>
       </div>
       <img src={ graphicsBotton } />
     </div>
