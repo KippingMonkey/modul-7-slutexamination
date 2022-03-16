@@ -4,6 +4,7 @@ import graphicsTop from '../assets/graphics/graphics-header.svg'
 import graphicsBotton from '../assets/graphics/graphics-footer.svg'
 
 import MenuItem from '../components/MenuItem';
+import Cartbtn from '../components/Cartbtn';
 
 function Menu () {
   return(
@@ -20,6 +21,7 @@ function Menu () {
         <MenuItem/>
       </div>
       <img src={ graphicsBotton } />
+      <Cartbtn/>
     </div>
   )
 }

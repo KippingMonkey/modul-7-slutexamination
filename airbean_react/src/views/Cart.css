@@ -1,0 +1,22 @@
+.cart-container,
+.bg-container,
+.filter{
+  width: 375px;
+  height: 655px;
+}
+
+.cart-container{
+  position: relative;
+}
+
+.bg-container{
+  overflow: hidden;
+}
+
+.filter{
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 3;
+}

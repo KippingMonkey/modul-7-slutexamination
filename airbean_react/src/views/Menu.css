@@ -1,4 +1,5 @@
 .menu-container{
+    position: relative;
     width: 375px;
     height: 839px;
     background-color: #F3E4E1;
