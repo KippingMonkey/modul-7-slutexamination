@@ -1,0 +1,18 @@
+.order-btn{
+  position: absolute;
+  bottom:41px;
+  left: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 55px;
+  background-color: #2F2926;
+  border-radius: 9999px;
+}
+
+.btn-text{
+  font-size: 24px;
+  font-family: 'PT Serif', sans-serif;
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+.status-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 667px;
+  background-color: #E5674E;
+}
+
+.status-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 557px;
+  outline: 1px dotted black;
+}
+
+.status-header{
+  color: #fff;
+}
+
+.confirm-btn{
+  width: 184px;
+  height: 55px;
+  background-color: #fff;
+}
