@@ -10,19 +10,38 @@
 .status-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 275px;
-  height: 557px;
-  outline: 1px dotted black;
+  width: 225px;
+  height: 550px;
+}
+
+.order-no,
+.order-eta{
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
 }
 
 .status-header{
   color: #fff;
+  text-align: center;
 }
 
 .confirm-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 184px;
   height: 55px;
   background-color: #fff;
+  border-radius: 999px;
 }
+
+.confirm-text{
+  color: #2F2926;
+  font-family: 'PT Serif', serif;
+  font-size: 24px;
+  text-decoration:none;
+}
+
