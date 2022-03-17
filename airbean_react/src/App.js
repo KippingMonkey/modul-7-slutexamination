@@ -2,6 +2,9 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import axios from 'axios';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { addMenu } from './actions/menuActions';
+
 import Landing from './views/Landing';
 import Menu from './views/Menu';
 import Cart from './views/Cart';
@@ -10,19 +13,21 @@ import Error from './views/Error';
 
 function App() {
 
-  const apiUrl = 'http://localhost:5000/api/beans'
+  const dispatch = useDispatch();
 
-  let data = getMenu(apiUrl);
+  const apiUrl = 'http://localhost:5000/api/beans'
 
   async function getMenu(query) {
     axios.get(query)
     .then((response) => {
-      console.log(response);
+      console.log('The menu', response.data.menu);
+      dispatch(addMenu(response.data.menu))
     })
     .catch((error) => {
       console.log(error);
     })
   };
+  getMenu(apiUrl);
 
   return (
     <div className="App">

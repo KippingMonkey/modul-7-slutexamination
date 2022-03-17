@@ -1,4 +1,4 @@
-const intialState = {
+const initialState = {
   cartItems: []
 }
 
@@ -7,12 +7,19 @@ const cartItemReducer = (state = initialState, action) => {
     case 'ADD_MENU':
       return {
           ...state,
-          
+          menuItems: action.payload
       }
+      case 'SHOW_CART_CONTENT':
+        return {
+          ...state,
+          cartItems: action.payload
+        }
       
       break;
   
     default:
-      break;
+      return state;
   }
 }
+
+export  default cartItemReducer;

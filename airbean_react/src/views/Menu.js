@@ -6,7 +6,11 @@ import graphicsBotton from '../assets/graphics/graphics-footer.svg'
 import MenuItem from '../components/MenuItem';
 import Cartbtn from '../components/Cartbtn';
 
+import axios from 'axios';
+
 function Menu () {
+
+  axios.get('../')
   return(
     <div className="menu-container">
       <img src={ graphicsTop} />
