@@ -1,20 +1,25 @@
 import './MenuItem.css';
 import add from '../assets/graphics/add.svg';
-import { Link } from 'react-router-dom';
 
-function MenuItem () {
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart } from '../actions/cartActions';
+
+function MenuItem ( props ) {
+const dispatch = useDispatch();
+
+function sendToCart (){
+  dispatch(addToCart(props.menuItem))
+}
   return(
     <div className="menu-item-container">
         <div className="btn-container">
-          <Link to="/cart">
-            <div className="add-btn"><img src={ add } className="add"/></div>
-          </Link> 
+          <div onClick={ sendToCart } className="add-btn"><img src={ add } className="add"/></div>
         </div>
         <div className="product-container">
-          <p className="title">Bryggkaffe</p>
-          <p className="description">Bryggt på månandens bönor</p>
+          <p className="title">{ props.menuItem.title }</p>
+          <p className="description">{ props.menuItem.desc }</p>
         </div>
-        <p className="price">49kr</p>
+        <p className="price">{ props.menuItem.price } kr</p>
     </div>
   )
 }
