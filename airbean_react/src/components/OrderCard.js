@@ -8,13 +8,24 @@ import TotalPrice from './TotalPrice';
 function OrderCard () {
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })
   let orders;
-  console.log('CARTITEM: ', cartItems)
+
+  const uniqueCartItems = Array.from(new Set(cartItems.map(cartItem => cartItem.id)))
+                          .map(id => {
+                            return {
+                              id: id,
+                              title: cartItems.find(cartItem => cartItem.id === id).title,
+                              price: cartItems.find(cartItem => cartItem.id === id).price
+                            };
+                          });
+
 
   if (cartItems.length === 0) {
     orders = <h2>Din varukorg är tom!</h2>
   }
   else{
-    orders = <CartItem cartItem={ cartItems } />
+    orders = uniqueCartItems.map((cartItem) => {
+            return <CartItem cartItem={ cartItem } key={ cartItem.id } />
+          })
   }
 
   return (
@@ -22,8 +33,6 @@ function OrderCard () {
       <h1 className='orderCard-header'>Din beställning</h1>
       <div className='arrow'></div>
       <div className='order-container'>
-        { orders }
-        { orders }
         { orders }
       </div>
       <div className='total-container'>
