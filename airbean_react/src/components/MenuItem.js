@@ -1,11 +1,12 @@
 import './MenuItem.css';
 import add from '../assets/graphics/add.svg';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '../actions/cartActions';
 
 function MenuItem ( props ) {
 const dispatch = useDispatch();
+console.log('MenuItem: ', props.menuItem);
 
 function sendToCart (){
   dispatch(addToCart(props.menuItem))

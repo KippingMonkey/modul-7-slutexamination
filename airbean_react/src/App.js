@@ -2,7 +2,7 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import axios from 'axios';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addMenu } from './actions/menuActions';
 
 import Landing from './views/Landing';

@@ -2,6 +2,10 @@
   position: absolute;
   bottom: 17px;
   left: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   width: 341px;
   height: 566px;
   background-color: #fff;
@@ -10,10 +14,11 @@
   z-index: 9;
 }
 
-.header{
+.orderCard-header{
   font-size: 32px;
   font-family: 'PT Serif', serif;
   margin-top: 40px;
+  margin-bottom: 25px;
 }
 
 .arrow {
@@ -30,6 +35,13 @@
 }
 
 .order-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
   width: 331px;
-  height: 556px;
+  height: 280px;
+  outline: 1px solid green;
+  margin-bottom: 10px;
 }
