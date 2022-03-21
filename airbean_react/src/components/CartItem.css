@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid blue;
 }
 
 .cartProduct-container{
@@ -14,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  outline: 1px solid red;
 }
 
 .cartItem-title{
