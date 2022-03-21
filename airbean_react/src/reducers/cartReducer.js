@@ -9,13 +9,17 @@ const cartItemReducer = (state = initialState, action) => {
         ...state,
         cartItems: [...state.cartItems,
           {
-            cartItemId: state.cartItems.length + 1,
             id: action.payload.id,
             title: action.payload.title,
             desc:action.payload.desc,
             price: action.payload.price
           } 
         ]
+    }
+    case 'REMOVE_ITEM_FROM_CART':
+    return {
+        ...state,
+        cartItems:action.payload
     }
     case 'CLEAR_CART':
     return {
