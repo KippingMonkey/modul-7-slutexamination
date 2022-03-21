@@ -5,6 +5,7 @@ function TotalPrice (){
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })
   let totalPrice;
   const ids = cartItems.map( cartItem => cartItem.id);
+  
   if (cartItems.length === 0 ) {
       totalPrice = 0;
   }

@@ -41,6 +41,7 @@
   align-items: center;
   gap: 10px;
   width: 331px;
-  height: 280px;
-  margin-bottom: 10px;
+  height: 250px;
+  margin-bottom: 40px;
+  overflow: scroll;
 }
