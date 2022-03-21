@@ -5,17 +5,24 @@ function TotalPrice (){
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })
   let totalPrice;
   const ids = cartItems.map( cartItem => cartItem.id);
-  
+
   if (cartItems.length === 0 ) {
       totalPrice = 0;
   }
   else{
     const prices = cartItems.map(cartItem => cartItem.price);
-    console.log('prices', prices);
     totalPrice = prices.reduce((a, b) => a + b);
   }
+  let ones = 0;
+  let sevens = 0;
+  let pairs = 0;
   if (ids.includes(1) && ids.includes(7)) {
-    totalPrice -= 39;
+    ids.forEach(id => {
+     id === 1 ? ones += 1 : ones = ones;
+     id === 7 ? sevens += 1 : sevens = sevens;
+    });
+    ones === sevens ? pairs = ones : pairs = Math.min(ones, sevens);
+    totalPrice -= pairs * 39;
   }
 
   return(
