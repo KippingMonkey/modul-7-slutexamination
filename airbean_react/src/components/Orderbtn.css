@@ -7,12 +7,12 @@
   align-items: center;
   width: 248px;
   height: 55px;
-  background-color: #2F2926;
+  background-color: var(--airbean-brown);
   border-radius: 9999px;
 }
 
 .btn-text{
   font-size: 24px;
-  font-family: 'PT Serif', sans-serif;
+  font-family: var(--airbean-ff-pt);
   color: #fff;
 }

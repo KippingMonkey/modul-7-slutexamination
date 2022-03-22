@@ -5,7 +5,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: #2F2926;
+  background-color: var(--airbean-brown);
   border-radius: 50%;
   right: 12px;
   top: 12px;
@@ -19,7 +19,7 @@
   align-items: center;
   width: 22px;
   height: 22px;
-  background-color: #E5674E;
+  background-color: var(--airbean-orange);
   border-radius: 50%;
   top: 10px;
   right: 10px;
@@ -27,8 +27,8 @@
 }
 
 .qty{
-  color: #ffff;
-  font-family: 'PT Serif', serif;
+  color: var(--airbean-white);
+  font-family: var(--airbean-ff-pt);
   font-weight: 600;
   font-size: 12px;
 }

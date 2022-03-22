@@ -1,5 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans:wght@400;700&display=swap');
 
+:root {
+  --airbean-brown: #2F2926;
+  --airbean-green: #38846D;
+  --airbean-pink: #F3E4E1;
+  --airbean-orange: #E5674E;
+  --airbean-white: #ffff;
+  --airbean-black: #0000;
+
+  --airbean-ff-pt: 'PT Serif', serif;
+  --airbean-ff-work: 'Work Sans', sans-serif;
+}
+
 
 

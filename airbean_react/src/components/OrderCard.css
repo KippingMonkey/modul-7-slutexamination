@@ -8,7 +8,7 @@
   align-items: center;
   width: 341px;
   height: 566px;
-  background-color: #fff;
+  background-color: var(--airbean-white);
   border-radius: 4px;
   text-align: center;
   z-index: 9;
@@ -16,7 +16,7 @@
 
 .orderCard-header{
   font-size: 32px;
-  font-family: 'PT Serif', serif;
+  font-family: var(--airbean-ff-pt);
   margin-top: 40px;
   margin-bottom: 25px;
 }
@@ -30,7 +30,7 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   
-  border-bottom: 15px solid #fff;
+  border-bottom: 15px solid var(--airbean-white);
   border-radius: 4px;
 }
 

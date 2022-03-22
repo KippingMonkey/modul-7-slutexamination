@@ -15,13 +15,13 @@
 
 .total,
 .price{
-  font-family: 'PT Serif', serif;
+  font-family: var(--airbean-ff-pt);
   font-size: 20px;
   margin: 0 0 3px 5px;
 }
 
 .inclusive{
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--airbean-ff-work);
   font-size: 12px;
   margin:0 0 0 5px;
 }

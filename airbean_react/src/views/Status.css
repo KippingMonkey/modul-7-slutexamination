@@ -4,7 +4,7 @@
   align-items: center;
   width: 375px;
   height: 667px;
-  background-color: #E5674E;
+  background-color: var(--airbean-orange);
 }
 
 .status-container{
@@ -19,13 +19,18 @@
 
 .order-no,
 .order-eta{
-  color: #fff;
-  font-family: 'Work Sans', sans-serif;
+  color: var(--airbean-white);
+  font-family: var(--airbean-ff-work);
   text-align: center;
 }
 
+.minutes{
+  font-family: var(--airbean-ff-work);
+  font-weight: bolder;
+}
+
 .status-header{
-  color: #fff;
+  color: var(--airbean-white);
   text-align: center;
   margin-top: 70px;
 }
@@ -36,13 +41,13 @@
   align-items: center;
   width: 184px;
   height: 55px;
-  background-color: #fff;
+  background-color: var(--airbean-white);
   border-radius: 999px;
 }
 
 .confirm-text{
-  color: #2F2926;
-  font-family: 'PT Serif', serif;
+  color: var(--airbean-brown);
+  font-family: var(--airbean-ff-pt);
   font-size: 24px;
   text-decoration:none;
 }

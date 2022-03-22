@@ -16,20 +16,20 @@
 }
 
 .cartItem-title{
-  font-family: 'PT Serif', serif;
+  font-family: var(--airbean-ff-pt);
   font-size: 19px;
   margin: 0;
   margin-bottom: 5px;
 }
 
 .cartItem-price{
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--airbean-ff-work);
   font-size: 12px;
   margin:0;
 }
 
 .count{
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--airbean-ff-work);
   font-size: 14px;
   margin:0;
 }

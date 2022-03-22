@@ -1,7 +1,7 @@
 .landing-container{
   width: 375px;
   height: 667px;
-  background-color: #38846D;
+  background-color: var(--airbean-green);
   display: flex;
   flex-direction: row;
   justify-content:space-between;

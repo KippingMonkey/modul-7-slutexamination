@@ -16,13 +16,13 @@
 .title,
 .price{
   font-size: 23px;
-  font-family: 'PT Serif', serif;
+  font-family: var(--airbean-ff-pt);
   margin:0;
   padding: 0;
 }
 
 .description{
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--airbean-ff-work);
   font-weight: 400;
   font-size: 12px;
   margin: 0;
@@ -42,7 +42,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background-color: black;
+  background-color: var(--airbean-brown);
   border-radius: 50%;
 }
 

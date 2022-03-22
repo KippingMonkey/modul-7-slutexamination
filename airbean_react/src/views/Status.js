@@ -17,7 +17,7 @@ function Status () {
         <img src={ drone }/>
         <div>
         <h1 className='status-header'>Din beställning är på väg!</h1>
-        <p className='order-eta'>{order.confirmation.eta } minuter</p>
+        <p className='order-eta'><span className='minutes'>{order.confirmation.eta }</span> minuter</p>
         </div>
         <Link style={{ textDecoration: 'none' }} to='/'>
           <Conformationbtn/> 

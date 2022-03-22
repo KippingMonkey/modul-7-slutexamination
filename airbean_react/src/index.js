@@ -14,15 +14,6 @@ const store = createStore(
 ) 
 console.log(store.getState());
 
-// const LoadingIcon = props => {
-//     const { promiseInProgress } = usePromiseTracker();
-//     return (
-//       promiseInProgress &&
-//       <div className='loader-container'>
-//         <img className='loader' src={ loader }/>
-//       </div>
-//     )
-//   }
 
 ReactDOM.render(
   <React.StrictMode>

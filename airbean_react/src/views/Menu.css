@@ -2,7 +2,7 @@
     position: relative;
     width: 375px;
     height: 839px;
-    background-color: #F3E4E1;
+    background-color: var(--airbean-pink);
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -18,8 +18,8 @@
 }
 
 .header{
-    color: #2F2926;
-    font-family:'PT Serif', serif ;
+    color: var(--airbean-brown);
+    font-family: var(--airbean-ff-pt);
     font-weight: 700;
     font-size: 42px;
     margin: 0;
