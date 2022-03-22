@@ -3,12 +3,12 @@ import drone from '../assets/graphics/drone.svg'
 import { Link } from 'react-router-dom';
 import { useSelector} from 'react-redux';
 import Conformationbtn from '../components/Conformationbtn';
+import LoadingIcon from '../components/LoadingIcon';
+
 
 
 function Status () {
-
   const order = useSelector((state) => { return state.statusReducer })
-  console.log('last', order.confirmation.eta);
 
   return(
     <div className='status-bg'>
@@ -22,6 +22,7 @@ function Status () {
         <Link style={{ textDecoration: 'none' }} to='/'>
           <Conformationbtn/> 
         </Link>
+        <LoadingIcon/>
       </div>
     </div>
   )

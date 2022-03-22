@@ -1,5 +1,5 @@
-import './TotalPrice.css';
 import { useSelector } from 'react-redux';
+import './TotalPrice.css';
 
 function TotalPrice (){
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })

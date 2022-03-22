@@ -8,6 +8,7 @@
 }
 
 .status-container{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,6 +27,7 @@
 .status-header{
   color: #fff;
   text-align: center;
+  margin-top: 70px;
 }
 
 .confirm-btn{
@@ -45,7 +47,4 @@
   text-decoration:none;
 }
 
-link{
-  text-decoration: none;
-}
 
