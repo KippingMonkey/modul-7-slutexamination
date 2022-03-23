@@ -1,3 +1,5 @@
+//below all triggers the 'CartReducer'
+
 export const addToCart = (cartItem) => {
   return {
     type: 'ADD_ITEM_TO_CART',

@@ -1,6 +1,7 @@
 import './Error.css';
-import gif from '../assets/graphics/7iJR.gif';
 import { Link } from 'react-router-dom';
+//sets internal link to another view
+import gif from '../assets/graphics/7iJR.gif';
 
 function Error () {
   return(

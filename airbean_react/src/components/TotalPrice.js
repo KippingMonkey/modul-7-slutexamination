@@ -1,17 +1,22 @@
-import { useSelector } from 'react-redux';
 import './TotalPrice.css';
+import { useSelector } from 'react-redux';
+//used to fetch the state from the given reducer
 
 function TotalPrice (){
+
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })
   let totalPrice;
   const ids = cartItems.map( cartItem => cartItem.id);
+  //makes an array with only ids from cartItems
 
   if (cartItems.length === 0 ) {
       totalPrice = 0;
   }
   else{
     const prices = cartItems.map(cartItem => cartItem.price);
+    //single out all prices from cartItems
     totalPrice = prices.reduce((a, b) => a + b);
+    //add all the prices together
   }
   let ones = 0;
   let sevens = 0;
@@ -23,6 +28,7 @@ function TotalPrice (){
     });
     ones === sevens ? pairs = ones : pairs = Math.min(ones, sevens);
     totalPrice -= pairs * 39;
+    // above if checks how many combinations there are of "Bryggkaffe" and "Bakelse"
   }
 
   return(

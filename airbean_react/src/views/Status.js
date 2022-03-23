@@ -1,9 +1,11 @@
 import './Status.css';
-import drone from '../assets/graphics/drone.svg'
 import { Link } from 'react-router-dom';
+//sets internal link to another view
 import { useSelector} from 'react-redux';
+//used to fetch the state from the given reducer
 import Conformationbtn from '../components/Conformationbtn';
 import LoadingIcon from '../components/LoadingIcon';
+import drone from '../assets/graphics/drone.svg'
 
 
 

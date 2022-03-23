@@ -1,10 +1,8 @@
 import './Menu.css';
-
 import { useSelector } from 'react-redux';
-
+//used to fetch the state from the given reducer
 import graphicsTop from '../assets/graphics/graphics-header.svg'
 import graphicsBotton from '../assets/graphics/graphics-footer.svg'
-
 import MenuItem from '../components/MenuItem';
 import Cartbtn from '../components/Cartbtn';
 
