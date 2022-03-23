@@ -1,0 +1,8 @@
+.cred{
+  text-align: center;
+  color: var(--airbean-white);
+  font-family: var(--airbean-ff-work);
+}
+a{
+  color: var(--airbean-white);
+}
