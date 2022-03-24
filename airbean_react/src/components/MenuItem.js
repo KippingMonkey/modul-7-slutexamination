@@ -1,8 +1,10 @@
 import './MenuItem.css';
+import { useDispatch } from 'react-redux';
+//used to dispatch data to the store
+import { addToCart } from '../actions/cartActions';
+//used with dispatch to relay an action for the dispatched data
 import add from '../assets/graphics/add.svg';
 
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../actions/cartActions';
 
 function MenuItem ( props ) {
 const dispatch = useDispatch();
@@ -10,6 +12,7 @@ console.log('MenuItem: ', props.menuItem);
 
 function sendToCart (){
   dispatch(addToCart(props.menuItem))
+  //sends cartItem to cart when add-btn is clicked
 }
   return(
     <div className="menu-item-container">

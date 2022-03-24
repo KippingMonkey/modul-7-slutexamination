@@ -1,5 +1,6 @@
 import './LoadingIcon.css';
 import { usePromiseTracker } from 'react-promise-tracker';
+//uses the state tracked in the POST request triggered in "Orderbtn"-component
 import loader from '../assets/graphics/loader.png';
 
 const LoadingIcon = props => {

@@ -1,8 +1,10 @@
 import './OrderCard.css';
-import Orderbtn from './Orderbtn';
 import { Link } from 'react-router-dom';
-import CartItem from './CartItem';
+//sets internal link to another view
 import { useSelector } from 'react-redux';
+//used to fetch the state from the given reducer
+import Orderbtn from './Orderbtn';
+import CartItem from './CartItem';
 import TotalPrice from './TotalPrice';
 
 function OrderCard () {
@@ -17,7 +19,7 @@ function OrderCard () {
                               price: cartItems.find(cartItem => cartItem.id === id).price
                             };
                           });
-
+  //above maps over cartItems and makes a new array (uniqueCartItems) with distinct content
 
   if (cartItems.length === 0) {
     orders = <h2>Din varukorg är tom!</h2>
@@ -27,6 +29,7 @@ function OrderCard () {
             return <CartItem cartItem={ cartItem } key={ cartItem.id } />
           })
   }
+  //above checks for content i cart and displays one thing when empty and another when there are items in it
 
   return (
     <div className='card'>

@@ -1,9 +1,13 @@
 import './CartItem.css';
+import { addToCart } from '../actions/cartActions';
+//used to dispatch data to the store
+import { removeFromCart } from '../actions/cartActions';
+//used to dispatch data to the store
+import { useSelector, useDispatch } from 'react-redux';
+//used to fetch the state from the given reducer
+//used to dispatch data to the store
 import arrowUp from '../assets/graphics/arrow-up.svg';
 import arrowDown from '../assets/graphics/arrow-down.svg';
-import { addToCart } from '../actions/cartActions';
-import { removeFromCart } from '../actions/cartActions';
-import { useSelector, useDispatch } from 'react-redux';
 
 function CartItem (props){
   const cartItems = useSelector((state) => { return state.cartReducer.cartItems })
@@ -13,13 +17,13 @@ function CartItem (props){
   cartItems.forEach(cartItem => {
     cartItem.id === props.cartItem.id ? qty += 1 : qty = qty;
   });
-
+  //above adds one to quantity...
   function addCartItem () {
     dispatch(addToCart(props.cartItem));
   }
+  //...and sends updated qty to store
   function removeCartItem () {
     const index = cartItems.findIndex(cartItem => cartItem.id === props.cartItem.id);
-    console.log('index',index)
     if (index > -1) {
       const items = [...cartItems];
       items.splice(index, 1);
@@ -27,8 +31,8 @@ function CartItem (props){
       dispatch(removeFromCart(items)); 
     }
   }
-
-  console.log('cartitemcontent', props)
+  //above finds the index of clicked item and remove one from that quantity
+  
   return(
     <div className="cartItem-container">
       <div className='cartProduct-container'>
