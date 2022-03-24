@@ -28,7 +28,7 @@ function TotalPrice (){
     });
     ones === sevens ? pairs = ones : pairs = Math.min(ones, sevens);
     totalPrice -= pairs * 39;
-    // above if checks how many combinations there are of "Bryggkaffe" and "Bakelse"
+    // above if-statement checks how many combinations there are of "Bryggkaffe" and "Bakelse" which warrants a discount
   }
 
   return(
